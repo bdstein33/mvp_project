@@ -1,0 +1,20 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  
+
+  {{#if userFullName}}
+    <h2>Welcome {{userFullName}}!</h2>
+    <a href="/signout"><p>Sign Out</p></a>
+  {{else}}
+    <h2>Not logged in</h2>
+    <a href="/signup"><p>Sign Up</p></a>
+    <a href="/signin"><p>Sign In</p></a>
+  {{/if}}
+  <img src="img/dog.jpg">
+</body>
+</html>
